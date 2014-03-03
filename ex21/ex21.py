@@ -1,11 +1,46 @@
 # Royce Pope
 # March 3 2014
-# Simple Calculator
+# Simple Calculator v1.0
+
+import os
 
 def add(a,b):
+    print ("=====ADDITION=====")
+    ans = add(num1, num2)
     print ("ADDING %d + %d" % (a, b))
+    print ("Answer = %d" % ans)
     return a + b
+    
+print ("""
+******************************
+*                            *
+*          WELCOME TO        *
+*         ROYCE POPE'S       *
+*      SIMPLE CALCULATOR     *
+*                            *
+****************************** \n""")
 
+print("""
+What would you like to do?
+1) Addition
+2) Subtraction
+3) Multiplication
+4) Division
+""")
+
+choice = int(input(">> "))
+
+print ("Please enter 1st number")    
+num1 = int(input(">> "))
+print ("Please enter 2nd number")
+num2 = int(input(">> "))
+
+if choice == 1:
+    os.system('clear')
+    output = add(num1, num2)
+
+if choice == 2:
+    subtract()
 def subtract(a,b):
     print ("SUBRACTING %d - %d" % (a, b))
     return a - b
@@ -18,13 +53,7 @@ def divide(a,b):
     print ("DIVIDING %d / %d" % (a, b))
     return a / b
 
-print ("=====ADDITION=====")
-print ("Please enter 1st number")    
-add1 = int(input(">> "))
-print ("Please enter 2nd number")
-add2 = int(input(">> "))
-add_answer = add(add1, add2)
-print ("Answer = %d" % add_answer)
+print ("Let's do some Math!")
 
 print ("=====SUBTRACT=====")
 print ("Please enter 1st number")
