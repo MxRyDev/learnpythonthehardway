@@ -25,6 +25,7 @@ add2 = input()
 add_answer = add(add1, add2)
 print ("Addition Answer=%d" % add_answer)
 
+# This can be used a a Multi-Line comment
 '''
 print ("=====SUBTRACT=====")
 print ("Please enter 1st number")
