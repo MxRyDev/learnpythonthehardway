@@ -1,6 +1,6 @@
 # Royce Pope
 # March 3 2014
-# Simple Calculator v1.1
+# Simple Calculator v2.0
 
 def add(a,b):
     print ("=====ADDITION=====")
